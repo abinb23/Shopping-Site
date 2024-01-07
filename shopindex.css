@@ -1,8 +1,7 @@
-/* Add this CSS to your shopindex.css file */
-
+/* Reset some default styles */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif; /* You can change the font-family as needed */
+    font-family: 'Arial', sans-serif;
 }
 
 /* Header styling */
@@ -10,48 +9,48 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; /* Adjust the padding to decrease the height */
-    background-color: #000; /* Set the desired background color to black */
-    color: #fff; /* Set the text color to white */
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
 }
 
 .header a.logo-link {
-    margin-right: 50px; /* Adjust margin as needed */
+    margin-right: 50px;
 }
 
 .header img.logo {
-    height: 80px; /* Adjust the height for your logo */
-    transition: transform 0.3s ease-in-out; /* Add the transition effect */
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .header nav {
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .header nav a,
 .header .user-buttons a {
     text-decoration: none;
-    color: #fff; /* Set the text color to white */
+    color: #fff;
     padding: 10px 20px;
     margin: 0 10px;
     display: inline-block;
     background-color: transparent;
     border: none;
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 18px;
     position: relative;
-    transition: transform 0.3s ease-in-out; /* Add the transition effect */
-    border-radius: 15px; /* Add curved corners */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
 }
 
 .header nav a:hover,
 .header .user-buttons a:hover {
-    background-color: #7a00dd; /* Set the desired hover background color */
-    transform: scale(1.1); /* Increase the size on hover */
+    background-color: #7a00dd;
+    transform: scale(1.1);
 }
 
 .header nav a:hover::before,
 .header .user-buttons a:hover::before {
-    background-color: #f30101; /* Set the desired hover background color for ::before */
+    background-color: #f30101;
 }
 
 .header .user-buttons a::before {
@@ -62,7 +61,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border-radius: 15px; /* Adjust the border-radius to create a curved square shape */
+    border-radius: 15px;
     z-index: -1;
     transition: background-color 0.3s ease-in-out;
 }
@@ -79,43 +78,46 @@ body {
 
 .header .user-buttons a {
     text-decoration: none;
-    color: #fff; /* Set the text color to white */
+    color: #fff;
     padding: 10px 20px;
     margin: 0 10px;
     display: inline-block;
     border: none;
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 18px;
     position: relative;
-    transition: transform 0.3s ease-in-out; /* Add the transition effect */
-    border-radius: 15px; /* Add curved corners */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
 }
 
-/* Add additional styling as needed */
-
-/* Center the H1 text */
-h1 {
+/* Today Product Section */
+.today-product {
     text-align: center;
-    margin-top: 20px; /* Adjust the top margin as needed */
+    margin-top: 20px;
+}
+
+.today-product h1 {
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Grid styling */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 20px; /* Adjust the gap between items */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 20px;
 }
 
 .grid-item {
-    background-color: #f0f0f0; /* Set the background color for each item */
+    background-color: #f0f0f0;
     padding: 20px;
-    border-radius: 15px; /* Add curved corners to the items */
+    border-radius: 15px;
     text-align: center;
 }
 
 .grid-item img {
     max-width: 100%;
-    border-radius: 10px; /* Add curved corners to the image */
+    border-radius: 10px;
 }
 
 .grid-item h2 {
