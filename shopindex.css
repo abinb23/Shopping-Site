@@ -1,33 +1,33 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Header styling */
-.header {
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Header styling */
+  .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #000;
     color: #fff;
-}
-
-.header a.logo-link {
+  }
+  
+  .header a.logo-link {
     margin-right: 50px;
-}
-
-.header img.logo {
+  }
+  
+  .header img.logo {
     height: 80px;
     transition: transform 0.3s ease-in-out;
-}
-
-.header nav {
+  }
+  
+  .header nav {
     text-align: left;
-}
-
-.header nav a,
-.header .user-buttons a {
+  }
+  
+  .header nav a,
+  .header .user-buttons a {
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
@@ -39,20 +39,20 @@ body {
     position: relative;
     transition: transform 0.3s ease-in-out;
     border-radius: 15px;
-}
-
-.header nav a:hover,
-.header .user-buttons a:hover {
+  }
+  
+  .header nav a:hover,
+  .header .user-buttons a:hover {
     background-color: #7a00dd;
     transform: scale(1.1);
-}
-
-.header nav a:hover::before,
-.header .user-buttons a:hover::before {
+  }
+  
+  .header nav a:hover::before,
+  .header .user-buttons a:hover::before {
     background-color: #f30101;
-}
-
-.header .user-buttons a::before {
+  }
+  
+  .header .user-buttons a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -63,19 +63,19 @@ body {
     border-radius: 15px;
     z-index: -1;
     transition: background-color 0.3s ease-in-out;
-}
-
-.header .login-button,
-.header .signup-button {
+  }
+  
+  .header .login-button,
+  .header .signup-button {
     background-color: #000000;
-}
-
-.header .user-buttons {
+  }
+  
+  .header .user-buttons {
     display: flex;
     align-items: center;
-}
-
-.header .user-buttons a {
+  }
+  
+  .header .user-buttons a {
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
@@ -86,45 +86,49 @@ body {
     position: relative;
     transition: transform 0.3s ease-in-out;
     border-radius: 15px;
-}
-
-/* Today Product Section */
-.today-product {
+  }
+  
+  /* Today Product Section */
+  .today-product {
     text-align: center;
     margin-top: 20px;
-}
-
-.today-product h1 {
+  }
+  
+  .today-product h1 {
     text-align: center;
     margin-top: 20px;
-}
-
-/* Grid styling */
-.grid-container {
+  }
+  
+  /* Grid styling */
+  .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
-}
-
-.grid-item {
+  }
+  
+  .grid-item {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-}
-
-.grid-item img {
+  }
+  
+  .grid-item img {
     max-width: 100%;
     border-radius: 10px;
-}
-
-.grid-item h2 {
+  }
+  
+  .grid-item a {
+    text-decoration: none;
+  }
+  
+  .grid-item h2 {
     margin: 10px 0;
-    color: black; 
-    text-decoration: none; 
-}
-
-.grid-item p {
+    color: black;
+  }
+  
+  .grid-item p {
     margin: 0;
-}
+  }
+  
