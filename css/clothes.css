@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Roboto", sans-serif; 
+    font-family: "Roboto", sans-serif;
     background-color: rgb(248, 248, 248);
 }
 
@@ -12,13 +12,53 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .header {
     font-weight: bold;
     font-size: 36px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
-    color: #000000; 
+    color: #000000;
+}
 
+/* Clothes Grid Container */
+.clothes-grid-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Clothes Grid Item */
+.clothes-grid-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 10px;
+}
+
+.item-box {
+    background-color: #f0f0f0;
+    padding: 15px 1px; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+.item-box img {
+    max-width: 250px; 
+    border-radius: 10px;
+}
+
+.item-box a {
+    text-decoration: none;
+    color: black;
+}
+
+.item-box h2 {
+    margin: 10px 0;
+    color: black;
+}
+
+.item-box p {
+    margin: 0;
 }
