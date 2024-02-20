@@ -98,7 +98,7 @@ body {
     border-radius: 15px;
 }
 
-/* electronics Page Content */
+/* Electronics Page Content */
 .electronics-page-content {
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@ body {
     height: 100vh; /* Fill the height of the viewport */
 }
 
-/* Blink effect for h1 */
+/* Blink effect for h2 */
 @keyframes blink {
     0% {
         opacity: 1;
@@ -116,26 +116,26 @@ body {
         opacity: 0;
     }
     100% {
-        opacity: 2;
+        opacity: 1;
     }
 }
 
 .blink {
     animation: blink 1s infinite;
-    margin-top: 750px; /* Adjust margin as needed */
+    margin-top: 40px; /* Adjust margin as needed */
 }
 
-/* electronics Grid Container */
+/* Electronics Grid Container */
 .electronics-grid-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px; /* Adjust padding */
 }
 
-/* electronics Grid Item */
+/* Electronics Grid Item */
 .electronics-grid-item {
-    width: calc(33.33% - 20px);
+    width: calc(25% - 10px); /* Adjust width */
     margin-top: 20px; /* Adjust margin as needed */
 }
 

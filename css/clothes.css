@@ -122,7 +122,7 @@ body {
 
 .blink {
     animation: blink 1s infinite;
-    margin-top: 750px; /* Adjust margin as needed */
+    margin-top: 630px; /* Adjust margin as needed */
 }
 
 /* Clothes Grid Container */
@@ -135,7 +135,7 @@ body {
 
 /* Clothes Grid Item */
 .clothes-grid-item {
-    width: calc(33.33% - 20px);
+    width: calc(30% - 5px); /* Adjust width */
     margin-top: 20px; /* Adjust margin as needed */
 }
 
