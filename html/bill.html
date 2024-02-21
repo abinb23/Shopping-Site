@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing and Cart Page</title>
+    <link rel="stylesheet" href="../css/bill.css">
+</head>
+<body>
+    <div class="header">
+        <a href="../html/shopindex.html" class="logo-link"><img src="../../images/logo1.jpeg" alt="AIO MART Logo" class="logo"></a>
+        <nav>
+            <a href="../html/shopindex.html">Home</a>
+            <a href="../html/bill.html">About Us</a>
+            <a href="#">Companies</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="user-buttons">
+            <a href="#" class="login-button">Login</a>
+            <a href="#" class="signup-button">Sign Up</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="product-details">
+            <div class="product-images">
+                <img src="../images/shirts/1.jpg" alt="Product Image 1" style="width: 200px;"> <!-- Make the image smaller -->
+                <!-- Add more images here for the slider -->
+            </div>
+
+            <div class="product-info">
+                <h2>Rango Strips</h2>
+                <form>
+                    <p>Introducing our stylish short in black, white, and yellow. Crafted from premium, breathable material, it offers ultimate comfort and coolness. Perfect for any activity, this short is a must-have addition to your wardrobe.</p>
+                    <p>₹650/-</p>
+                    <div class="rating">
+                        <!-- Change rating to star shape -->
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <!-- Add more stars for rating -->
+                    </div>
+                    <div class="buttons">
+                        <button onclick="addToCart()">Add to Cart</button>
+                        <button onclick="buyNow()">Buy Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shopping Page</p>
+    </footer>
+
+    <script>
+        function addToCart() {
+            // Add logic to add the product to the cart
+            alert('Product added to cart!');
+        }
+
+        function buyNow() {
+            // Add logic to proceed with buying the product
+            alert('Thank you for your purchase!');
+        }
+    </script>
+</body>
+</html>
+    

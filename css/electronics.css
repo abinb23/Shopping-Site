@@ -102,9 +102,9 @@ body {
 .electronics-page-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    height: 100vh; /* Fill the height of the viewport */
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
 }
 
 /* Blink effect for h2 */
@@ -122,7 +122,7 @@ body {
 
 .blink {
     animation: blink 1s infinite;
-    margin-top: 40px; /* Adjust margin as needed */
+    margin-top: 40px; 
 }
 
 /* Electronics Grid Container */
@@ -130,13 +130,13 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 10px; /* Adjust padding */
+    padding: 10px; 
 }
 
 /* Electronics Grid Item */
 .electronics-grid-item {
-    width: calc(25% - 10px); /* Adjust width */
-    margin-top: 20px; /* Adjust margin as needed */
+    width: calc(25% - 10px); 
+    margin-top: 20px; 
 }
 
 /* Item Box */
