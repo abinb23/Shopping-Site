@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billing and Cart Page</title>
-    <link rel="stylesheet" href="../css/bill.css">
+    <link rel="stylesheet" href="../css/rangobill.css">
 </head>
 <body>
     <div class="header">
         <a href="../html/shopindex.html" class="logo-link"><img src="../../images/logo1.jpeg" alt="AIO MART Logo" class="logo"></a>
         <nav>
             <a href="../html/shopindex.html">Home</a>
-            <a href="../html/bill.html">About Us</a>
+            <a href="">About Us</a>
             <a href="#">Companies</a>
             <a href="#">Contact Us</a>
         </nav>
@@ -24,7 +24,7 @@
     <main>
         <section class="product-details">
             <div class="product-images">
-                <img src="../images/shirts/1.jpg" alt="Product Image 1" style="width: 200px;"> <!-- Make the image smaller -->
+                <img src="../images/shirts/1.jpg" alt="Product Image 1"> 
                 <!-- Add more images here for the slider -->
             </div>
 
@@ -33,11 +33,8 @@
                 <form>
                     <p>Introducing our stylish short in black, white, and yellow. Crafted from premium, breathable material, it offers ultimate comfort and coolness. Perfect for any activity, this short is a must-have addition to your wardrobe.</p>
                     <p>₹650/-</p>
-                    <div class="rating">
-                        <!-- Change rating to star shape -->
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <!-- Add more stars for rating -->
+                    <div class="rating" id="rating">
+                        <!-- JavaScript-->
                     </div>
                     <div class="buttons">
                         <button onclick="addToCart()">Add to Cart</button>
@@ -53,15 +50,44 @@
 
     <script>
         function addToCart() {
-            // Add logic to add the product to the cart
+            // add the product to the cart
             alert('Product added to cart!');
         }
 
         function buyNow() {
-            // Add logic to proceed with buying the product
+            // proceed with buying the product
             alert('Thank you for your purchase!');
+        }
+
+        // adding rating stars
+        const ratingContainer = document.getElementById('rating');
+        let currentRating = 0;
+
+        for (let i = 1; i <= 5; i++) {
+            const starElement = document.createElement('span');
+            starElement.classList.add('star');
+            starElement.innerHTML = '&#9733;'; // Star icon
+            starElement.setAttribute('data-rating', i);
+
+            starElement.addEventListener('click', () => {
+                currentRating = i;
+                updateRating();
+            });
+
+            ratingContainer.appendChild(starElement);
+        }
+
+        function updateRating() {
+            const stars = ratingContainer.querySelectorAll('.star');
+            stars.forEach(star => {
+                const ratingValue = parseInt(star.getAttribute('data-rating'));
+                if (ratingValue <= currentRating) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
         }
     </script>
 </body>
 </html>
-    
