@@ -88,6 +88,20 @@
                 }
             });
         }
+
+        // JavaScript for zoom effect
+        const productImage = document.querySelector('.product-images img');
+
+        productImage.addEventListener('mousemove', (e) => {
+            const { left, top, width, height } = productImage.getBoundingClientRect();
+            const x = e.clientX - left;
+            const y = e.clientY - top;
+
+            const xPercent = (x / width) *100;
+            const yPercent = (y / height) *100;
+
+            productImage.style.transformOrigin = `${xPercent}% ${yPercent}%`;
+        });
     </script>
 </body>
 </html>
